@@ -53,7 +53,7 @@ export default function TestimonialCarousel() {
   return (
     <section className="bg-gradient-to-r from-cream to-ivory py-16 px-4 text-center">
     <div className="max-w-3xl mx-auto">
-      <div className="text-yellow-500 mb-6 text-4xl">★★★★★</div> {/* Increased star size */}
+      <div className="text-yellow-500 stroke-yellow-600 mb-6 text-5xl">★★★★★</div> {/* Increased star size */}
   
       <div className="relative min-h-[300px] overflow-hidden"> {/* Increased height */}
         <AnimatePresence initial={false} custom={direction}>
