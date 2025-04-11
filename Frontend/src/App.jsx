@@ -1,7 +1,10 @@
 import AboutUs from "./components/AboutUs"
 import DesignProcess from "./components/DesignProcess"
+import FAQSection from "./components/FAQSection"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import Newsletter from "./components/Newsletter"
 import ProjectsSection from "./components/ProjectsSection"
 import ServiceCards from "./components/ServiceCards"
 import ServicesSection from "./components/ServicesSection"
@@ -24,6 +27,9 @@ function App() {
 <DesignProcess/>
 <TestimonialCarousel/>
 <ProjectsSection/>
+<FAQSection/>
+<Newsletter/>
+<Footer/>
 
     </>
   )

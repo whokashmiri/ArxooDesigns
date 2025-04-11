@@ -33,18 +33,23 @@ const services = [
                 alt={service.title}
                 className="w-full h-full object-cover mb-6"
               />
-              <h3 className="text-xl font-semibold text-[#161615] mb-3">
+              <h3 className="text-3xl font-medium text-[#161615] mb-3">
                 {service.title}
               </h3>
-              <p className="text-[#3B3B3B] mb-5 text-sm">
+              <p className="text-[#3B3B3B] mb-5 text-lg">
                 {service.description}
               </p>
               <a
-                href="#"
-                className="uppercase text-sm font-medium border-b border-black w-fit hover:opacity-70 transition"
-              >
-                Get Started Now
-              </a>
+  href="#"
+  className="relative uppercase text-sm text-black font-medium w-fit pb-1 
+             after:content-[''] after:absolute after:left-0 after:bottom-0 
+             after:h-[2px] after:w-0 after:bg-black after:transition-all 
+             after:duration-300 hover:after:w-full hover:after:h-[2px]"
+>
+  Get Started Now
+</a>
+
+
             </div>
           ))}
         </div>
