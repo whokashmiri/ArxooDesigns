@@ -28,7 +28,7 @@ export default function FAQSection() {
     <section className="bg-[#f7f3ec] min-h-screen px-4 py-12 md:px-20">
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex justify-center items-center gap-2 mb-2">
-          <div className="w-4 h-4 bg-black"></div>
+          <div className="w-7 h-7 bg-black"></div>
           <span className="uppercase text-sm tracking-widest">Faq</span>
         </div>
         <h2 className="text-4xl md:text-5xl font-bold mb-10">

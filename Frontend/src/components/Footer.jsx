@@ -1,18 +1,31 @@
+import { useEffect } from "react";
 import {
     FaFacebookF,
     FaLinkedinIn,
     FaInstagram,
     FaRegEnvelope,
   } from "react-icons/fa";
+  import AOS from "aos";
+  import "aos/dist/aos.css";
+
+
   
   const Footer = () => {
+
+      useEffect(() => {
+          AOS.init({ duration: 1000 });
+        }, []);
+    
+        const date = new Date();
+       const year = date.getFullYear()
+        console.log(year);
     return (
       <footer className="bg-black text-white px-6 md:px-20 py-14">
         {/* Two main sections with equal width */}
         <div className="grid md:grid-cols-2 gap-12">
           {/* Brand Info */}
           <div>
-            <h2 className="text-4xl tracking-wider font-semibold mb-4">ARZOO</h2>
+            <h2 className="text-4xl tracking-wider font-semibold mb-4"  data-aos="fade-right">ARZOO</h2>
             <p className="text-gray-300 leading-relaxed">
               We are passionate about creating stunning and functional interiors
               that elevate your living and working spaces.
@@ -54,7 +67,7 @@ import {
   
         {/* Divider & Footer Bottom */}
         <div className="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
-          © Copyright 2025. All Rights Reserved by ARZOO
+          © Copyright {year}. All Rights Reserved by ARZOO
         </div>
       </footer>
     );

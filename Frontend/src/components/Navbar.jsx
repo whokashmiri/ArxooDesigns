@@ -1,8 +1,14 @@
 import { useState, useEffect } from "react";
-import { ChevronDown } from "lucide-react"; // Optional, for dropdown arrow
+import { ChevronDown } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+     
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,7 +27,7 @@ export default function Navbar() {
       <div className="max-w-7xl mt-3 mx-auto px-6 py-4 flex items-center justify-between text-white font-sans font-semibold text-sm">
         
         {/* Left: Logo */}
-        <div className="uppercase text-xl tracking-widest">
+        <div className="uppercase text-xl tracking-widest" data-aos="fade-right">
           ARZOO
         </div>
 
