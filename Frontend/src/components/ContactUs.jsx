@@ -1,9 +1,10 @@
 import { useState, useRef } from 'react';
-import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaUser, FaUsers } from 'react-icons/fa';
+import { FaEnvelope,  FaPhoneAlt, FaUser, FaUsers } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import Navbar from './Navbar';
 import Newsletter from './Newsletter';
 import Footer from './Footer';
+import { AtSign } from 'lucide-react';
 
 const ContactUs = () => {
   const [selected, setSelected] = useState('solo');
@@ -144,15 +145,15 @@ const ContactUs = () => {
             <div className="space-y-4 text-gray-800">
               <div className="flex items-center gap-4">
                 <FaPhoneAlt className="text-xl" />
-                <span>+546 495626</span>
+                <span>+918767146842</span>
               </div>
               <div className="flex items-center gap-4">
                 <FaEnvelope className="text-xl" />
-                <span>intro33@example.com</span>
+                <span>manar.designs1@gmail.com</span>
               </div>
               <div className="flex items-center gap-4">
-                <FaMapMarkerAlt className="text-xl" />
-                <span>New York City office 20265 road</span>
+                <AtSign className="text-xl" />
+                <span>manar.designs1</span>
               </div>
             </div>
           </div>

@@ -1,28 +1,20 @@
-import { useState, useEffect } from "react";
-import { ChevronDown } from "lucide-react";
+import {  useEffect } from "react";
+import { Link } from 'react-router-dom';
 import AOS from "aos";
 import "aos/dist/aos.css"; 
      
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full h-20 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-[#af7942]" : ""
-      }`}
+      className="fixed top-0 left-0 w-full h-20 z-50 transition-colors duration-300 ${
+        bg-[#af7942]"
     >
       <div className="max-w-7xl mt-3 mx-auto px-6 py-4 flex items-center justify-between text-white font-sans font-semibold text-sm">
         
@@ -33,25 +25,28 @@ export default function Navbar() {
 
         {/* Center: Navigation */}
         <div className="hidden md:flex gap-10 items-center">
-          <div className="flex items-center gap-1 cursor-pointer">
-            <span>All Pages</span>
-            <ChevronDown className="w-4 h-4" />
-          </div>
-          <a href="#about" className="text-lg hover:text-gray-200">About Us</a>
-          <a href="#blog" className="text-lg hover:text-gray-200">Blog</a>
-          <a href="#contact" className="text-lg hover:text-gray-200">Contact</a>
-          <a href="#services" className="text-lg hover:text-gray-200">Services</a>
-
-        </div>
+        <Link to="/home" className="text-lg hover:text-gray-200">
+    Home
+  </Link>
+  <Link to="/about" className="text-lg hover:text-gray-200">
+    About Us
+  </Link>
+  <Link to="/contact" className="text-lg hover:text-gray-200">
+    Contact
+  </Link>
+  <Link to="/services" className="text-lg hover:text-gray-200">
+    Services
+  </Link>
+</div>
 
         {/* Right: Contact Button */}
         <div className="hidden md:block">
-          <a
-            href="#contact"
+          <Link
+            href="contact"
             className="uppercase border border-white px-8 py-4 text-white text-sm hover:bg-white hover:text-black transition-all duration-200  "
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
