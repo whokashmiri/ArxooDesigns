@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import {
     FaFacebookF,
     FaLinkedinIn,
@@ -46,10 +48,13 @@ import {
             <div>
               <h3 className="text-lg font-semibold mb-4">Menu</h3>
               <ul className="space-y-2 text-gray-300">
-                <li><a href="#" className="hover:text-white transition">Home</a></li>
-                <li><a href="#" className="hover:text-white transition">About</a></li>
-                <li><a href="#" className="hover:text-white transition">Blog</a></li>
-                <li><a href="#" className="hover:text-white transition">Contact</a></li>
+                <li> <Link to="/home" className="text-lg hover:text-gray-200">Home</Link>
+          
+                <li><Link to="/about" className="text-lg hover:text-gray-200">About Us</Link></li>
+                <li> <Link to="/contact" className="text-lg hover:text-gray-200">Contact</Link>
+                </li>
+                <li>          <Link to="/services" className="text-lg hover:text-gray-200">Services</Link></li>
+                </li>
               </ul>
             </div>
   

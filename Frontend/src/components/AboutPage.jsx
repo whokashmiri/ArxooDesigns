@@ -97,19 +97,19 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section className="bg-ivory h-screen py-16 px-6 md:px-16">
+      <section className="bg-ivory h-fit py-16 px-6 md:px-16">
       {/* Label with black square */}
      
 
       {/* Heading */}
-      <h1 className=" font-medium tracking-wider text-black text-2xl md:text-4xl lg:text-4xl leading-tight">
+      <h1 className=" font-medium tracking-wider text-black text-2xl md:text-3xl lg:text-4xl leading-tight">
       We focus on designing spaces that are both functional and visually
  appealing for residential and commercial clients. By partnering with
  architects, builders, and homeowners, we transform design into
  beautiful and harmonious environments.
       </h1><br />
 
-      <h1 className=" font-medium tracking-wider text-black text-2xl md:text-4xl lg:text-4xl leading-tight">
+      <h1 className=" font-medium tracking-wider text-black text-2xl md:text-3xl lg:text-4xl leading-tight">
       Whether it&apos;s a  <span className='text-gray-400'>cozy home, a boutique hotel, or an office space, our  
 designers take into account factors like layout, color schemes,
  furniture, lighting, usability,access, site features and decor </span> to create
