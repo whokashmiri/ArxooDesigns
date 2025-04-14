@@ -10,12 +10,14 @@ import ServiceCards from "../components/ServiceCards"
 import ServicesSection from "../components/ServicesSection"
 import TestimonialCarousel from "../components/TestimonialCarousel"
 import WhatWeDo from "../components/WhatWeDo"
+import Card from "./Card"
  const Home = () => {
   return (
     <div>
 
         
-<Navbar/>
+{/* <Navbar/> */}
+<Card/>
 <Hero/>
 <WhatWeDo/>
 
